@@ -3,76 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Ira ❤ — Amar Naam Maruf, Ami Tomake Bhalobashi</title>
-<meta name="description" content="A premium little universe made only for Ira, by Maruf.">
-<meta name="theme-color" content="#2a0f1e">
+<title>Ira ❤ — Ami Tomake Bhalobashi</title>
+<meta name="description" content="Made only for Ira, by Maruf.">
+<meta name="theme-color" content="#ff8fb3">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* PREMIUM TOKENS — mobile-first math: canvas 360-430, padding 16, targets >=52px */
 :root{
-  --night:#1c0b18; --night2:#2a0f1e; --wine:#7a1e3c; --rose:#e23a75; --rose-d:#b9245c;
-  --blush:#ffd6e7; --cream:#fff9f3; --gold:#e9b558; --gold-l:#f6d789;
-  --ink:#43202f; --soft:#96617a;
-  --shadow:0 14px 36px rgba(122,30,60,.20); --soft-s:0 4px 16px rgba(122,30,60,.12);
+  --wine:#7a1e3c; --rose:#e23a75; --rose-d:#b9245c;
+  --blush:#ffd6e7; --pink-100:#ffe4ee; --cream:#fff9f4;
+  --gold:#e9b558; --gold-l:#f6d789;
+  --ink:#4a2333; --soft:#96617a;
+  --shadow:0 14px 36px rgba(226,58,117,.18); --soft-s:0 4px 16px rgba(226,58,117,.12);
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
 html,body{overflow-x:hidden;max-width:100vw}
-body{font-family:'Quicksand',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:15.5px}
+body{font-family:'Quicksand',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:15.5px;
+  background-image:radial-gradient(circle at 10% 5%,#ffe4ee 0 120px,transparent 121px),
+    radial-gradient(circle at 95% 18%,#fff3d6 0 90px,transparent 91px),
+    radial-gradient(circle at 5% 60%,#ffe4ee 0 100px,transparent 101px);
+  background-attachment:fixed}
 .serif{font-family:'Playfair Display',Georgia,serif}
-#stars{position:fixed;inset:0;z-index:0;pointer-events:none}
 #petals{position:fixed;inset:0;z-index:1;pointer-events:none}
 #boom{position:fixed;inset:0;z-index:55;pointer-events:none;display:none}
 .wrap{max-width:430px;margin:0 auto;padding:0 16px 90px;position:relative;z-index:2}
-/* ---------- Welcome ---------- */
+/* ---------- Welcome : clean white premium ---------- */
 #welcome{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:24px;
-  background:radial-gradient(1200px 600px at 50% -10%,#5c1633 0%,var(--night2) 45%,#12060f 100%);transition:opacity .7s,visibility .7s}
+  background:linear-gradient(165deg,#ffd6e7 0%,#fff6f9 45%,#fff9ec 100%);transition:opacity .7s,visibility .7s}
 #welcome.hide{opacity:0;visibility:hidden}
-.w-card{max-width:360px;width:100%;text-align:center;background:linear-gradient(170deg,#fffdf8,#ffeef4);
-  border-radius:28px;padding:34px 24px 26px;border:1.5px solid var(--gold-l);
-  box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 0 6px rgba(233,181,88,.15);animation:pop .8s cubic-bezier(.2,1.4,.4,1)}
-@keyframes pop{from{transform:scale(.82) translateY(26px);opacity:0}}
-.seal{width:92px;height:92px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;font-size:44px;
-  background:radial-gradient(circle at 35% 30%,#ff8fb3,var(--rose-d));box-shadow:0 12px 30px rgba(226,58,117,.45);animation:beat 1.6s ease-in-out infinite}
+.w-card{max-width:360px;width:100%;text-align:center;background:#ffffff;
+  border-radius:28px;padding:34px 24px 26px;border:1.5px solid #ffd6e7;
+  box-shadow:0 24px 60px rgba(226,58,117,.25);animation:pop .8s cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{from{transform:scale(.85) translateY(22px);opacity:0}}
+.seal{width:88px;height:88px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;font-size:42px;
+  background:linear-gradient(135deg,#ffe4ee,#ffc9dd);box-shadow:0 12px 30px rgba(226,58,117,.3);animation:beat 1.6s ease-in-out infinite}
 @keyframes beat{0%,100%{transform:scale(1)}12%{transform:scale(1.12)}24%{transform:scale(1)}}
-.w-card h1{font-size:25px;line-height:1.35;color:var(--wine)}
+.w-card h1{font-size:25px;line-height:1.4;color:var(--ink)}
 .w-card h1 em{color:var(--rose)}
 .w-sub{color:var(--soft);font-size:14px;margin:10px 0 18px}
-.names-chip{display:inline-block;font-weight:800;letter-spacing:3px;font-size:12.5px;color:var(--wine);
-  border:1.5px solid var(--gold);padding:6px 18px;border-radius:100px;margin-bottom:12px;background:#fff8ea}
+.names-chip{display:inline-block;font-weight:800;letter-spacing:3px;font-size:12.5px;color:var(--rose-d);
+  border:1.5px solid var(--blush);padding:6px 18px;border-radius:100px;margin-bottom:12px;background:#fff6f9}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:56px;border:none;
   border-radius:100px;font-family:inherit;font-weight:700;font-size:16px;cursor:pointer;padding:14px 20px;
   transition:transform .15s,box-shadow .2s;text-decoration:none}
 .btn:active{transform:scale(.96)}
-.btn-rose{background:linear-gradient(135deg,#ff5c8f,var(--rose-d));color:#fff;box-shadow:0 12px 28px rgba(226,58,117,.45)}
-.btn-gold{background:linear-gradient(135deg,var(--gold-l),var(--gold));color:#5b3400;box-shadow:0 12px 28px rgba(233,181,88,.45)}
-.btn-ghost{background:#fff;color:var(--wine);border:2px solid var(--blush)}
+.btn-rose{background:linear-gradient(135deg,#ff5c8f,var(--rose-d));color:#fff;box-shadow:0 12px 28px rgba(226,58,117,.4)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-l),var(--gold));color:#5b3400;box-shadow:0 12px 28px rgba(233,181,88,.4)}
+.btn-ghost{background:#fff;color:var(--rose-d);border:2px solid var(--blush)}
 .btn-row{display:flex;gap:10px}.btn-row .btn{flex:1}
 .tiny{font-size:12.5px;color:var(--soft);margin-top:12px}
-/* ---------- Topbar ---------- */
+/* ---------- Topbar : light ---------- */
 .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
-  max-width:430px;margin:0 auto;padding:10px 16px;background:rgba(28,11,24,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-  border-bottom:1px solid rgba(233,181,88,.35);color:#ffe9f2}
+  max-width:430px;margin:0 auto;padding:10px 16px;background:rgba(255,249,244,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid #ffd6e7;color:var(--ink)}
 .brand{display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;letter-spacing:2px}
-.brand .dot{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#ff5c8f,#7a1e3c);display:grid;place-items:center}
-.music-btn{display:flex;align-items:center;gap:7px;border:1.5px solid var(--gold);background:rgba(255,255,255,.08);
-  border-radius:100px;padding:8px 14px;font-family:inherit;font-weight:700;font-size:12.5px;color:var(--gold-l);cursor:pointer}
-/* ---------- Hero (night premium) ---------- */
-.hero{margin:0 -16px;padding:40px 22px 30px;text-align:center;color:#ffeef5;position:relative;overflow:hidden;
-  background:radial-gradient(600px 300px at 50% 0%,rgba(226,58,117,.35),transparent 70%),linear-gradient(180deg,#2a0f1e,#1c0b18)}
-.hero .moon{font-size:44px;animation:float 4s ease-in-out infinite;display:block}
+.brand .dot{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#ff5c8f,#b9245c);display:grid;place-items:center;color:#fff}
+.music-btn{display:flex;align-items:center;gap:7px;border:2px solid var(--blush);background:#fff;
+  border-radius:100px;padding:8px 14px;font-family:inherit;font-weight:700;font-size:12.5px;color:var(--rose-d);cursor:pointer}
+/* ---------- Hero : light premium ---------- */
+.hero{margin:0 -16px;padding:38px 22px 28px;text-align:center;position:relative;overflow:hidden;
+  background:linear-gradient(180deg,#ffe4ee 0%,#fff6f9 55%,var(--cream) 100%)}
+.hero .float-h{font-size:42px;animation:float 4s ease-in-out infinite;display:block}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-.hero h2{font-size:clamp(34px,10vw,46px);line-height:1.15;margin:10px 0 2px;
-  background:linear-gradient(100deg,#fff 20%,var(--gold-l) 40%,#ffb3cd 60%,#fff 80%);background-size:220% auto;
-  -webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite}
-@keyframes shine{to{background-position:220% center}}
-.hero .bang{font-size:16px;color:var(--gold-l);margin-top:10px;min-height:56px;font-weight:600}
-.hero p.sub{color:#c99bb0;font-size:13.5px;max-width:320px;margin:10px auto 0}
+.hero h2{font-size:clamp(36px,11vw,48px);line-height:1.15;margin:8px 0 2px;color:var(--wine)}
+.hero .bang{font-size:16.5px;color:var(--rose-d);margin-top:10px;min-height:58px;font-weight:600}
+.hero p.sub{color:var(--soft);font-size:13.5px;max-width:320px;margin:10px auto 0}
 .couple{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:16px}
-.couple .who{background:rgba(255,255,255,.08);border:1.5px solid rgba(233,181,88,.5);border-radius:16px;
-  padding:10px 18px;font-weight:800;letter-spacing:2px;font-size:15px}
+.couple .who{background:#fff;border:1.5px solid var(--blush);border-radius:16px;
+  padding:10px 18px;font-weight:800;letter-spacing:2px;font-size:15px;color:var(--wine);box-shadow:var(--soft-s)}
 .couple .heart{font-size:30px;animation:beat 1.4s infinite}
 /* ---------- Sections ---------- */
 section{margin-top:28px;position:relative}
@@ -83,14 +83,13 @@ section{margin-top:28px;position:relative}
 .sec-head p{color:var(--soft);font-size:13.5px;max-width:330px;margin:6px auto 0}
 .card{background:#fff;border-radius:24px;box-shadow:var(--shadow);border:1.5px solid #ffe0ec;overflow:hidden}
 .pad{padding:20px 18px}
-/* poetry */
+/* lines */
 .kobi{display:grid;gap:12px}
-.kob{background:linear-gradient(155deg,#fff 0%,#fff3e4 60%,#ffe9f2 100%);border:1.5px solid #f3d9a8;border-radius:20px;
-  padding:18px;box-shadow:var(--soft-s);position:relative;opacity:0;transform:translateY(22px);transition:.6s}
+.kob{background:linear-gradient(155deg,#fff 0%,#fff8ec 60%,#ffeef5 100%);border:1.5px solid #f3d9a8;border-radius:20px;
+  padding:18px 18px 16px;box-shadow:var(--soft-s);opacity:0;transform:translateY(22px);transition:.6s}
 .kob.show{opacity:1;transform:none}
-.kob::before{content:"❝";position:absolute;top:4px;right:14px;font-size:32px;color:#e9b558;opacity:.6}
 .kob p{font-size:15px;color:#5b2a3d}
-.kob small{display:block;margin-top:8px;color:var(--rose-d);font-weight:700;font-size:11.5px;letter-spacing:2px}
+.kob .h{font-size:20px;margin-bottom:6px;display:block}
 /* gallery */
 .g-grid{display:grid;gap:16px}
 .g-card{background:#fff;border-radius:22px;overflow:hidden;border:1.5px solid #ffe0ec;box-shadow:var(--shadow);
@@ -100,21 +99,21 @@ section{margin-top:28px;position:relative}
 .g-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s}
 .g-card.show img{animation:kenburns 8s ease-in-out infinite alternate}
 @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.08)}}
-.g-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(122,30,60,.25));pointer-events:none}
+.g-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(185,36,92,.18));pointer-events:none}
 .g-frame{position:absolute;inset:10px;border:1.5px solid rgba(255,255,255,.65);border-radius:14px;pointer-events:none;z-index:2}
-.g-num{position:absolute;top:16px;left:16px;background:rgba(28,11,24,.75);color:var(--gold-l);border-radius:100px;
+.g-num{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.92);color:var(--rose-d);border-radius:100px;
   font-size:12px;font-weight:800;padding:4px 12px;z-index:3}
 .g-cap{padding:14px 16px 16px}
 .g-cap b{font-size:15px;color:var(--wine)}
 .g-cap .bl{margin-top:6px;font-size:13.5px;color:var(--soft);font-style:italic;background:#fff6f9;
   border-left:3px solid var(--rose);padding:8px 10px;border-radius:0 12px 12px 0}
-/* reasons */
+/* favourites */
 .why{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .why-item{background:#fff;border:1.5px solid #ffe0ec;border-radius:18px;padding:14px 12px;text-align:center;box-shadow:var(--soft-s)}
 .why-item .ico{font-size:28px}
 .why-item b{display:block;font-size:13.5px;margin:6px 0 2px;color:var(--wine)}
 .why-item p{font-size:12px;color:var(--soft)}
-/* gates */
+/* surprises */
 .steps{display:grid;gap:12px}
 .gate{background:#fff;border:1.5px solid #ffe0ec;border-radius:20px;padding:16px;box-shadow:var(--soft-s)}
 .gate.locked{opacity:.7}
@@ -125,21 +124,22 @@ section{margin-top:28px;position:relative}
   border:1.5px dashed var(--gold);animation:pop .5s}
 .secret.open{display:block}
 .secret img{width:100%;border-radius:12px;margin-top:10px;aspect-ratio:4/5;object-fit:cover}
-/* proposal */
-.propose{background:linear-gradient(165deg,#2a0f1e,#5c1633);border-radius:28px;padding:28px 20px;text-align:center;
-  color:#ffeef5;border:1.5px solid rgba(233,181,88,.5);box-shadow:0 24px 60px rgba(122,30,60,.4);overflow:hidden;position:relative}
+/* proposal : light premium */
+.propose{background:linear-gradient(165deg,#fff 0%,#ffeef5 60%,#fff6e3 100%);border-radius:28px;padding:28px 20px;text-align:center;
+  color:var(--ink);border:1.5px solid #f3d9a8;box-shadow:0 24px 60px rgba(185,36,92,.25);overflow:hidden;position:relative}
 .ring{font-size:64px;display:block;animation:float 3s ease-in-out infinite}
-.propose h3{font-size:24px;line-height:1.4;margin:10px 0}
-.propose h3 .gold{color:var(--gold-l)}
-#noZone{position:relative;min-height:180px;background:rgba(255,255,255,.07);border:2px dashed rgba(233,181,88,.6);
+.propose h3{font-size:23px;line-height:1.45;margin:10px 0;color:var(--wine)}
+.propose h3 .gold{color:#c07f1a}
+#noZone{position:relative;min-height:180px;background:#fff6f9;border:2px dashed #ffb3cd;
   border-radius:20px;margin:14px 0;padding:16px;overflow:hidden}
 #yesBtn{transition:.3s}
 #noBtn{transition:left .25s,top .25s}
-#gameMsg{min-height:44px;font-weight:700;color:var(--gold-l);font-size:14.5px;margin-top:10px}
+#gameMsg{min-height:44px;font-weight:700;color:var(--rose-d);font-size:14.5px;margin-top:10px}
 .progress{display:flex;gap:6px;justify-content:center;margin:12px 0 2px}
-.pdot{width:26px;height:8px;border-radius:100px;background:rgba(255,255,255,.2);transition:.3s}
-.pdot.on{background:var(--gold)}
-#yesSecret{display:none;background:#fff;color:var(--wine);border-radius:18px;padding:20px 16px;margin-top:6px;animation:pop .6s}
+.pdot{width:26px;height:8px;border-radius:100px;background:#ffd6e7;transition:.3s}
+.pdot.on{background:var(--rose)}
+#yesSecret{display:none;background:linear-gradient(160deg,#fff,#ffeef5);color:var(--wine);border:1.5px solid var(--gold-l);
+  border-radius:18px;padding:20px 16px;margin-top:6px;animation:pop .6s}
 .hearts-big{font-size:44px;animation:beat 1.2s infinite}
 /* letter */
 .letter{background:#fffdf8;border-radius:24px;border:1.5px solid #f3d9a8;box-shadow:var(--shadow);padding:26px 20px;position:relative}
@@ -147,37 +147,36 @@ section{margin-top:28px;position:relative}
   background:linear-gradient(90deg,var(--rose),var(--gold),var(--rose))}
 .letter p{font-size:14.5px;margin-bottom:12px;color:#5b2a3d}
 .sign{font-size:19px;color:var(--rose-d);margin-top:6px}
-/* finale */
-.finale{text-align:center;background:linear-gradient(165deg,var(--rose-d),#5c1633);color:#fff;border-radius:28px;
-  padding:32px 20px;box-shadow:0 20px 50px rgba(122,30,60,.4);border:1.5px solid rgba(233,181,88,.5)}
+/* finale : light */
+.finale{text-align:center;background:linear-gradient(165deg,#fff 0%,#ffe4ee 60%,#fff3d6 100%);color:var(--wine);border-radius:28px;
+  padding:32px 20px;box-shadow:var(--shadow);border:1.5px solid #f3d9a8}
 .finale h3{font-size:24px;line-height:1.4}
-.finale p{font-size:14px;opacity:.92;margin:10px auto;max-width:310px}
+.finale p{font-size:14px;color:var(--soft);margin:10px auto;max-width:310px}
 footer{text-align:center;margin-top:26px;color:var(--soft);font-size:12.5px;position:relative;z-index:2}
 .rv{opacity:0;transform:translateY(24px);transition:opacity .65s,transform .65s}
 .rv.show{opacity:1;transform:none}
-#toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%) translateY(20px);background:#2a0f1e;color:#ffe9f2;
-  border:1px solid var(--gold);padding:11px 20px;border-radius:100px;font-size:13.5px;font-weight:600;opacity:0;
+#toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%) translateY(20px);background:#4a2333;color:#fff;
+  padding:11px 20px;border-radius:100px;font-size:13.5px;font-weight:600;opacity:0;
   pointer-events:none;transition:.35s;z-index:70;max-width:90vw;text-align:center}
 #toast.show{opacity:1;transform:translateX(-50%)}
-#musicFloat{position:fixed;right:14px;bottom:16px;z-index:40;width:54px;height:54px;border-radius:50%;border:1.5px solid var(--gold);
-  background:linear-gradient(135deg,#ff5c8f,#7a1e3c);color:#fff;font-size:22px;cursor:pointer;
-  box-shadow:0 10px 26px rgba(122,30,60,.5);display:none}
+#musicFloat{position:fixed;right:14px;bottom:16px;z-index:40;width:54px;height:54px;border-radius:50%;border:none;
+  background:linear-gradient(135deg,#ff5c8f,#b9245c);color:#fff;font-size:22px;cursor:pointer;
+  box-shadow:0 10px 26px rgba(185,36,92,.45);display:none}
 #musicFloat.playing{display:block;animation:beat 2s infinite}
 </style>
 </head>
 <body>
-<canvas id="stars"></canvas>
 <canvas id="petals"></canvas>
 <canvas id="boom"></canvas>
 
 <div id="welcome">
   <div class="w-card">
-    <div class="seal">💌</div>
+    <div class="seal">💖</div>
     <span class="names-chip">MARUF ❤ IRA</span>
-    <h1 class="serif">Ira, tomar jonno<br><em>ekta chotto jogot</em><br>baniyechi.</h1>
-    <p class="w-sub">2 minute somoy dao. Seshe ekta prosno ache —<br>jeta ami onek din dhore korte chai.</p>
-    <button class="btn btn-rose" id="openBtn">💖 Kholo, Ira 💖</button>
-    <p class="tiny">🔊 sound on rekho — romantic music bajbe</p>
+    <h1 class="serif">Ira, eta sudhu<br><em>tomar jonno</em> 🤍</h1>
+    <p class="w-sub">2 minute lagbe. Seshe ekta question ache —<br>jeta ami onek din dhore korte chai.</p>
+    <button class="btn btn-rose" id="openBtn">💖 open koro 💖</button>
+    <p class="tiny">🔊 sound on koro</p>
   </div>
 </div>
 
@@ -188,67 +187,67 @@ footer{text-align:center;margin-top:26px;color:var(--soft);font-size:12.5px;posi
 
 <div class="wrap">
   <div class="hero">
-    <span class="moon">🌙</span>
+    <span class="float-h">💖</span>
     <h2 class="serif">Ira</h2>
     <div class="bang serif"><i id="typeLine"></i></div>
-    <p class="sub">Scroll koro aste aste. Prottekta photo, prottekta line — sudhu tomar jonno lekha.</p>
+    <p class="sub">aste aste scroll koro. prottekta photo, prottekta line — tomar jonno.</p>
     <div class="couple"><span class="who">MARUF</span><span class="heart">❤</span><span class="who">IRA</span></div>
   </div>
 
   <section class="rv">
-    <div class="sec-head"><span class="sec-tag">KOBIDER BHASHAY TUMI</span>
-      <h3 class="serif">Tumi amar kolponar<br>golpo hoye gele.</h3>
-      <p>Rupkotha sunechilam chotobelai. Bhabini ekdin rupkotha amar samne ese darabe.</p>
+    <div class="sec-head"><span class="sec-tag">FOR YOU 🤍</span>
+      <h3 class="serif">kichu lines,<br>sudhu tomake niye.</h3>
+      <p>rate ghum asar age egulo likhechilam. pore dekho.</p>
     </div>
     <div class="kobi">
-      <div class="kob rv"><p>Tumi amar brishti bheja sondhya, tumi amar shishir veja sokal. Tomake dekhar por theke amar prithibi bodle geche — ekhon sob rong ektu besi ujjol lage.</p><small>✦ KOBITA 01</small></div>
-      <div class="kob rv"><p>Chandni raate chand ke dekhi, ar mone hoy — amar chand to amar kachei ache. Dur akashe takate hoy na, sudhu tomar dike takalei hoy.</p><small>✦ KOBITA 02</small></div>
-      <div class="kob rv"><p>Tomar chokhe takale mone hoy somudro dekhechi — gobhir, shanto, ar sekhane dub dite amar kono bhoy lage na. Karon sekhane sudhu bhalobasha ache.</p><small>✦ KOBITA 03</small></div>
-      <div class="kob rv"><p>Kobira tader premikake niye hajar kobita lekhe. Ami kobi na, Ira. Ami sudhu ekta chele — jar sob kobita tumi. Tumi hasle amar kolome kotha fute othe.</p><small>✦ KOBITA 04</small></div>
-      <div class="kob rv"><p>Tumi jokhon kanna lukiye haso, tokhon mone hoy — ei meyetake sarajibon agle rakhte hobe. Keu jeno tomar chokhe pani ante na pare. Kotha dilam, ami thakbo.</p><small>✦ KOBITA 05</small></div>
-      <div class="kob rv"><p>Raat jege tomar kotha bhabi, sokale uthe tomar kotha bhabi. Bondhura bole pagol hoye gechi. Hya, hoyechi — tomar preme pagol, ar ei paglami amar sobcheye priyo osukh.</p><small>✦ KOBITA 06</small></div>
+      <div class="kob rv"><span class="h">🌙</span><p>tumi asar por theke sobkichu ektu besi sundor lage. age jeta normal chilo, ekhon setao special lage — karon sekhane tumi acho.</p></div>
+      <div class="kob rv"><span class="h">🌧</span><p>brishtir sondhyay tomar kotha besi mone pore. janala diye pani pore, ar amar mon bole — ekhon tumi pase thakle perfect hoto.</p></div>
+      <div class="kob rv"><span class="h">👀</span><p>tomar chokhe takale mone hoy onek kichu bolar ache, kintu bolar dorkar nei. kichu feelings kotha charai bujha jay.</p></div>
+      <div class="kob rv"><span class="h">😊</span><p>tumi hasle amar din bhalo jay. simple hisab — tomar hasi mane amar happy day.</p></div>
+      <div class="kob rv"><span class="h">🤫</span><p>tumi jokhon mon kharap kore chup kore thako, tokhon amar iccha kore sob kaj fele sudhu tomar pase bose thaki.</p></div>
+      <div class="kob rv"><span class="h">💭</span><p>bondhura bole ami bodle gechi. ha, bodlechi — age sudhu nijer kotha bhabtam, ekhon sobar age tomar kotha bhabi.</p></div>
     </div>
   </section>
 
   <section>
-    <div class="sec-head rv"><span class="sec-tag">14TA MUHURTO</span>
-      <h3 class="serif">Ekta ekta kore dekho,<br>tarahuro koro na.</h3>
-      <p>Prottekta chobir niche tomar jonno ekta line — Banglish-e, mon theke.</p>
+    <div class="sec-head rv"><span class="sec-tag">14 TA MOMENTS 📸</span>
+      <h3 class="serif">aste aste dekho,<br>tarahuro koro na.</h3>
+      <p>prottekta photo r niche ekta line — sudhu tomar jonno.</p>
     </div>
     <div class="g-grid" id="gallery"></div>
   </section>
 
   <section class="rv">
-    <div class="sec-head"><span class="sec-tag">KENO TUMI?</span>
-      <h3 class="serif">Keno tumi<br>sobar cheye alada.</h3>
+    <div class="sec-head"><span class="sec-tag">FAVOURITE THINGS ✨</span>
+      <h3 class="serif">jegulo amar<br>sobcheye favourite.</h3>
     </div>
     <div class="why">
-      <div class="why-item"><div class="ico">😊</div><b>Tomar hasi</b><p>mon kharap thakleo thik hoye jay</p></div>
-      <div class="why-item"><div class="ico">👀</div><b>Tomar chokh</b><p>sekhane puro akash dekha jay</p></div>
-      <div class="why-item"><div class="ico">💬</div><b>Tomar kotha</b><p>rag korleo misti lage</p></div>
-      <div class="why-item"><div class="ico">🤲</div><b>Tomar mon</b><p>sobar jonno bhalo chay</p></div>
+      <div class="why-item"><div class="ico">😊</div><b>tomar hasi</b><p>mood off thakleo on hoye jay</p></div>
+      <div class="why-item"><div class="ico">👀</div><b>tomar chokh</b><p>takalei din bhalo jay</p></div>
+      <div class="why-item"><div class="ico">💬</div><b>tomar kotha</b><p>rag korleo sunte bhalo lage</p></div>
+      <div class="why-item"><div class="ico">🤍</div><b>tomar mon</b><p>sobar bhalo chao, etai best</p></div>
     </div>
   </section>
 
   <section class="rv">
-    <div class="sec-head"><span class="sec-tag">EKBAR EKTA KORE KHOLO 🎁</span>
-      <h3 class="serif">Tin ta dorja.<br>Prottekta te surprise.</h3>
+    <div class="sec-head"><span class="sec-tag">TIN TA SURPRISE 🎁</span>
+      <h3 class="serif">ekta ekta kore<br>open koro.</h3>
     </div>
     <div class="steps">
       <div class="gate" id="g1">
-        <div class="g-top"><span class="g-num2">1</span><b>Prothom kotha, ja age bolini…</b></div>
-        <button class="btn btn-gold" data-open="g1">💛 Dorja 1 kholo</button>
-        <div class="secret" id="g1-sec">Jedin prothom tomake dekhechilam, sedin bujhini — ei meyeta amar sarajiboner golpo hoye jabe. Aj bujhi. Ar aj bolchi.<br><img src="assets/photos/photo_2026-10-05_00-12-51.webp" alt="memory" loading="lazy" decoding="async"></div>
+        <div class="g-top"><span class="g-num2">1</span><b>prothom kotha…</b></div>
+        <button class="btn btn-gold" data-open="g1">💛 1 open koro</button>
+        <div class="secret" id="g1-sec">jedin prothom tomake dekhechilam, sedin bujhini — ei meyeta amar life er golpo hoye jabe. aj bujhi. ar aj bolchi.<br><img src="assets/photos/photo_2026-10-05_00-12-51.webp" alt="memory" loading="lazy" decoding="async"></div>
       </div>
       <div class="gate locked" id="g2">
-        <div class="g-top"><span class="g-num2">2</span><b>Tomar rag, amar priyo jinish…</b></div>
-        <button class="btn btn-gold" data-open="g2" disabled style="opacity:.5">💛 Dorja 2 kholo</button>
-        <div class="secret" id="g2-sec">Tumi rag korle ami hasi — rag er karone na, tomake dekhe. Gal fuliye jokhon mukh ghuriye nao, tokhon tomake sobcheye besi cute lage. Sorry, eta amar dosh na, tomar cuteness er dosh.<br><img src="assets/photos/photo_2026-10-05_00-12-56.webp" alt="memory" loading="lazy" decoding="async"></div>
+        <div class="g-top"><span class="g-num2">2</span><b>ekta secret…</b></div>
+        <button class="btn btn-gold" data-open="g2" disabled style="opacity:.5">💛 2 open koro</button>
+        <div class="secret" id="g2-sec">tumi rag korle ami hasi — rag er karone na, tomake dekhe. gal fuliye jokhon mukh ghuriye nao, tokhon sobcheye besi cute lago. sorry, eta amar dosh na.<br><img src="assets/photos/photo_2026-10-05_00-12-56.webp" alt="memory" loading="lazy" decoding="async"></div>
       </div>
       <div class="gate locked" id="g3">
-        <div class="g-top"><span class="g-num2">3</span><b>Ekta promise, mon theke…</b></div>
-        <button class="btn btn-rose" data-open="g3" disabled style="opacity:.5">💖 Dorja 3 kholo</button>
-        <div class="secret" id="g3-sec"><b class="serif">Promise korchi, Ira —</b> tomar chokhe kokhono pani aste debo na. Kosto ele age amar dorjay knock korbe, tomar dorjay na. Tumi sudhu hasbe, baki sob amar dayitto.<br><img src="assets/photos/photo_2026-10-05_00-12-59.webp" alt="memory" loading="lazy" decoding="async"></div>
+        <div class="g-top"><span class="g-num2">3</span><b>ekta promise…</b></div>
+        <button class="btn btn-rose" data-open="g3" disabled style="opacity:.5">💖 3 open koro</button>
+        <div class="secret" id="g3-sec"><b class="serif">promise korchi, Ira —</b> tomar chokhe kokhono pani aste debo na. kosto ele age amar kache asbe, tomar kache na. tumi sudhu hasbe, baki sob amar dayitto.<br><img src="assets/photos/photo_2026-10-05_00-12-59.webp" alt="memory" loading="lazy" decoding="async"></div>
       </div>
     </div>
   </section>
@@ -256,50 +255,49 @@ footer{text-align:center;margin-top:26px;color:var(--soft);font-size:12.5px;posi
   <section class="rv">
     <div class="propose">
       <span class="ring">💍</span>
-      <span class="sec-tag" style="background:rgba(255,255,255,.1);color:var(--gold-l);border-color:var(--gold)">THE QUESTION • SOBCHEKE BORO MUHURTO</span>
-      <h3 class="serif">Amar naam <span class="gold">Maruf</span>.<br>Ami tomake <span class="gold">bhalobashi</span>.<br>Ira, will you be mine —<br>aj, kal, sarajibon?</h3>
+      <span class="sec-tag">THE QUESTION 💍</span>
+      <h3 class="serif">ami tomake bhalobashi, Ira.<br>will you be mine —<br><span class="gold">aj, kal, sarajibon?</span></h3>
       <div class="progress"><div class="pdot" id="d1"></div><div class="pdot" id="d2"></div><div class="pdot" id="d3"></div><div class="pdot" id="d4"></div></div>
       <div id="noZone">
         <div class="btn-row">
           <button class="btn btn-rose" id="yesBtn">YES 💖</button>
           <button class="btn btn-ghost" id="noBtn">NO 🙈</button>
         </div>
-        <div id="gameMsg">Bhalo kore bhebe bolo… NO ta kintu paliye jay 😌</div>
+        <div id="gameMsg">bhalo kore bhebe bolo… NO ta kintu paliye jay 😌</div>
       </div>
       <div id="yesSecret">
         <div class="hearts-big">💍❤🎉</div>
         <b class="serif" style="font-size:20px">She said YES!</b>
-        <p style="font-size:14px;color:#7a1e3c;margin-top:8px">Aj theke tumi sudhu amar girlfriend na — tumi amar shopno, amar sokal, amar sarajiboner golpo. Ami tomake bhalobashi, Ira. Aj, kal, sobdin.</p>
+        <p style="font-size:14px;color:#7a1e3c;margin-top:8px">aj theke tumi amar sobcheye kacher manus. ami tomake bhalobashi, Ira. aj, kal, sobdin.</p>
         <img src="assets/photos/photo_2026-10-05_00-12-58.webp" alt="the rose moment" loading="lazy" decoding="async" style="width:100%;border-radius:14px;margin-top:10px;aspect-ratio:4/5;object-fit:cover">
       </div>
     </div>
   </section>
 
   <section class="rv">
-    <div class="sec-head"><span class="sec-tag">MARUF ER CHITHI 💌</span>
-      <h3 class="serif">Tomar jonno amar<br>moner kotha.</h3>
+    <div class="sec-head"><span class="sec-tag">EKTA CHITHI 💌</span>
+      <h3 class="serif">seshe ekta kotha<br>pore jao.</h3>
     </div>
     <div class="letter">
       <p>Priyo Ira,</p>
-      <p>Tumi barbar bolte — "amake propose koro na keno?" Aj korlam. Kintu kothay dariye na, evabe — jekhane amar prottekta kotha, prottekta chobi, prottekta button e amar mon lekha ache.</p>
-      <p>Tumi amar jiboner sobcheye sundor ghotona. Tomar hasi amar sokaler alo, tomar rag amar priyo khela, tomar chokh amar priyo akash.</p>
-      <p>Kobira ruposider niye kobita lekhe — ami sudhu tomake niye sarajibon likhte chai. Tumi amar kobita, tumi amar golpo, tumi amar thikana.</p>
-      <p>Ami tomake bhalobashi. Eta kono prosno chilo na — eta amar ridoyer sobcheye sotti kotha.</p>
+      <p>tumi barbar bolte — propose koro na keno? tai aj korlam. kono stage sajaini, kono boro kotha na — sudhu ei page ta, jekhane amar sob feelings sajano ache.</p>
+      <p>tomar hasi amar favourite jinish. tomar sathe kotha bolle somoy ki bhabe kete jay bujhi na. rag korleo tumi cute — eta niye amar kichu korar nei.</p>
+      <p>ami tomake bhalobashi. eta amar life er sobcheye sotti kotha.</p>
       <div class="sign serif"><i>— tomar Maruf ❤</i></div>
     </div>
   </section>
 
   <section class="rv">
     <div class="finale">
-      <div style="font-size:40px">🐼💖🌹</div>
-      <h3 class="serif">Tumi amar aj,<br>tumi amar agami.</h3>
-      <p>Ei page ta bondho hoye jabe, kintu amar bhalobasha bondho hobe na. Kokhono na.</p>
-      <button class="btn btn-gold" id="hugBtn">💖 Ekta bhalobasha pathao</button>
-      <p class="tiny" style="color:#ffd6e7" id="hugCount"></p>
+      <div style="font-size:40px">💖🌹🤍</div>
+      <h3 class="serif">tumi amar aj,<br>tumi amar agami.</h3>
+      <p>ei page ta bondho hoye jabe, kintu amar bhalobasha bondho hobe na. kokhono na.</p>
+      <button class="btn btn-gold" id="hugBtn">💖 bhalobasha pathao</button>
+      <p class="tiny" style="color:#96617a" id="hugCount"></p>
     </div>
   </section>
 
-  <footer>❤ MARUF ❤ IRA • bhalobasha diye banano • <span style="opacity:.7">home screen-e add kore rekho 💖</span></footer>
+  <footer>❤ MARUF ❤ IRA • jotno kore banano • <span style="opacity:.7">home screen-e add kore rekho 💖</span></footer>
 </div>
 
 <button id="musicFloat">🎵</button>
@@ -308,20 +306,20 @@ footer{text-align:center;margin-top:26px;color:var(--soft);font-size:12.5px;posi
 <script>
 /* ===== PHOTOS (14 webp) ===== */
 const PHOTOS=[
- {f:"photo_2026-10-05_00-12-50.webp",t:"Prothom alo.",r:"Tomake dekhar por theke amar sokal bodle geche — ekhon ghum bhangtei tomar kotha mone hoy."},
- {f:"photo_2026-10-05_00-12-51.webp",t:"Misti rod.",r:"Tomar hasi dekhe mone hoy, shitkal eo bosonto ese geche."},
- {f:"photo_2026-10-05_00-12-52.webp",t:"Shopner moto.",r:"Majhe majhe bhoy lage — tumi ki sotti, naki amar sobcheye sundor shopno?"},
- {f:"photo_2026-10-05_00-12-53.webp",t:"Chandni hasi.",r:"Chand ke dekhe ar hingsha hoy na. Amar chand amar kachei thake."},
- {f:"photo_2026-10-05_00-12-54.webp",t:"Niribili sundor.",r:"Bhirer moddheo tumi alada — alo jemon ondhokare alada thake."},
- {f:"photo_2026-10-05_00-12-54_2.webp",t:"Adorer frame.",r:"Ei chobita dekhe ami hese felechi — office er sobai takiye chilo. Kichu jay ase na."},
- {f:"photo_2026-10-05_00-12-55.webp",t:"Phuler moto.",r:"Baganer sob phul ekdike, tumi ekdike. Tumi jitbe, sobsomoy."},
- {f:"photo_2026-10-05_00-12-56.webp",t:"Rager ageo cute.",r:"Tumi rag korleo amar kache tumi sobcheye misti. Eta amar durbolota, mene nilam."},
- {f:"photo_2026-10-05_00-12-57.webp",t:"Govir chokh.",r:"Tomar chokhe takale somoy theme jay. Ghori ar amar sotruta hoye geche."},
- {f:"photo_2026-10-05_00-12-58.webp",t:"Golap ar tumi.",r:"Hate golap niye dariye acho — mone hocche rupkothar boi theke beriye ele."},
- {f:"photo_2026-10-05_00-12-59.webp",t:"Saree sundori.",r:"Saree te tomake dekhe kobider kotha mone pore — tara thik e bolechilo, rup emon e hoy."},
- {f:"photo_2026-10-05_00-12-59_2.webp",t:"Alor meye.",r:"Tumi jekhane jao, sekhane alo jay tomar sathe. Tumi nijei alo, Ira."},
- {f:"photo_2026-10-05_00-13-00.webp",t:"Chotto muhurto.",r:"Chotto chotto muhurto gulo niye amar boro boro shopno. Sob shopne tumi acho."},
- {f:"photo_2026-10-05_00-13-01.webp",t:"Ses na, suru.",r:"Eta sesh chobi na — amader golper prothom oddhay sesh. Baki golpo sarajibon likhbo."}
+ {f:"photo_2026-10-05_00-12-50.webp",t:"Prothom alo.",r:"tomake dekhar por theke sokale ghum bhangtei tomar kotha mone hoy."},
+ {f:"photo_2026-10-05_00-12-51.webp",t:"Misti rod.",r:"tomar hasi dekhe mone hoy shitkaleo bosonto ese geche."},
+ {f:"photo_2026-10-05_00-12-52.webp",t:"Shopner moto.",r:"majhe majhe bhoy lage — tumi ki sotti, naki amar sobcheye sundor shopno?"},
+ {f:"photo_2026-10-05_00-12-53.webp",t:"Chandni hasi.",r:"chand dekhe ar hingsha hoy na. amar chand amar kachei thake."},
+ {f:"photo_2026-10-05_00-12-54.webp",t:"Vhir eo alada.",r:"bhirer moddheo tumi alada — alo jemon ondhokare alada thake."},
+ {f:"photo_2026-10-05_00-12-54_2.webp",t:"Adorer frame.",r:"ei chobita dekhe ami hese felechi — asepaser sobai takiye chilo. kichu jay ase na."},
+ {f:"photo_2026-10-05_00-12-55.webp",t:"Phuler moto.",r:"baganer sob phul ekdike, tumi ekdike. tumi jitbe, sobsomoy."},
+ {f:"photo_2026-10-05_00-12-56.webp",t:"Rag eo cute.",r:"tumi rag korleo amar kache sobcheye misti. eta amar durbolota, mene nilam."},
+ {f:"photo_2026-10-05_00-12-57.webp",t:"Govir chokh.",r:"tomar chokhe takale somoy theme jay. ghori ar amar sotruta hoye geche."},
+ {f:"photo_2026-10-05_00-12-58.webp",t:"Golap ar tumi.",r:"hate golap niye dariye acho — ei moment tai amar favourite."},
+ {f:"photo_2026-10-05_00-12-59.webp",t:"Saree look.",r:"saree te tomake dekhe mone hoyeche — ei look ta amar jonnoi banano."},
+ {f:"photo_2026-10-05_00-12-59_2.webp",t:"Alor meye.",r:"tumi jekhane jao sekhane alo jay tomar sathe. tumi nijei alo."},
+ {f:"photo_2026-10-05_00-13-00.webp",t:"Chotto muhurto.",r:"chotto chotto muhurto niye amar boro boro plan. sob plan e tumi acho."},
+ {f:"photo_2026-10-05_00-13-01.webp",t:"Ses na, suru.",r:"eta sesh chobi na — amader golper prothom part sesh. baki golpo sarajibon likhbo."}
 ];
 const gal=document.getElementById('gallery');
 PHOTOS.forEach((p,i)=>{
@@ -334,23 +332,14 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.rv,.g-card,.kob').forEach(el=>io.observe(el));
 /* ===== toast ===== */
 let toastT;function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2400)}
-/* ===== stars canvas ===== */
-const st=document.getElementById('stars'),sx=st.getContext('2d');let ST=[];
-function sizeAll(){[st,document.getElementById('petals'),document.getElementById('boom')].forEach(c=>{c.width=innerWidth;c.height=innerHeight})}
-sizeAll();addEventListener('resize',sizeAll);
-for(let i=0;i<90;i++)ST.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:.5+Math.random()*1.6,ph:Math.random()*6.28,sp:.3+Math.random()*.9});
 /* ===== petals ===== */
 const pv=document.getElementById('petals'),px=pv.getContext('2d');let P=[];
+function sizeAll(){[pv,document.getElementById('boom')].forEach(c=>{c.width=innerWidth;c.height=innerHeight})}
+sizeAll();addEventListener('resize',sizeAll);
 const EMO=['🌹','❤','💖','✨','🌸'];
 function spawn(n){for(let i=0;i<n;i++)P.push({x:Math.random()*innerWidth,y:-20-Math.random()*120,s:11+Math.random()*13,v:.6+Math.random()*1.3,ph:Math.random()*6.28,e:EMO[Math.random()*EMO.length|0],o:.45+Math.random()*.5})}
 spawn(22);
 (function loop(t){const time=(t||0)/1000;
- sx.clearRect(0,0,st.width,st.height);
- const g=sx.createLinearGradient(0,0,0,st.height);g.addColorStop(0,'#2a0f1e');g.addColorStop(1,'#fff9f3');
- sx.globalAlpha=.9;sx.fillStyle=g;sx.fillRect(0,0,st.width,Math.min(st.height,innerHeight*.0+0));
- sx.globalAlpha=1;
- ST.forEach(s=>{s.y+=s.sp*.2;if(s.y>innerHeight*.42)s.y=0;const tw=.4+.6*Math.abs(Math.sin(time+s.ph));sx.globalAlpha=tw;sx.fillStyle='#f6d789';sx.beginPath();sx.arc(s.x,s.y,s.r,0,6.28);sx.fill()});
- sx.globalAlpha=1;
  px.clearRect(0,0,pv.width,pv.height);
  P.forEach(p=>{p.y+=p.v;p.x+=Math.sin(time+p.ph)*.6;if(p.y>innerHeight+30){p.y=-30;p.x=Math.random()*innerWidth}
   px.globalAlpha=p.o;px.font=p.s+'px serif';px.fillText(p.e,p.x,p.y)});
@@ -359,7 +348,7 @@ function burst(n){spawn(n);setTimeout(()=>P.splice(0,n),7000)}
 /* ===== fireworks ===== */
 function fireworks(){
  const c=document.getElementById('boom');c.style.display='block';const x=c.getContext('2d');let parts=[],t0=Date.now();
- const cols=['#ff5c8f','#f6d789','#ff8fb3','#e9b558','#fff'];
+ const cols=['#ff5c8f','#e9b558','#ff8fb3','#e23a75','#f6d789'];
  function boom(){for(let k=0;k<5;k++){const cx0=Math.random()*c.width,cy0=Math.random()*c.height*.5;
   for(let i=0;i<40;i++){const a=Math.random()*6.28,v=1+Math.random()*3;
    parts.push({x:cx0,y:cy0,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,c:cols[Math.random()*cols.length|0]})}}}
@@ -369,7 +358,7 @@ function fireworks(){
   parts=parts.filter(p=>p.l>0);
   if(Date.now()-t0>6000){clearInterval(iv);c.style.display='none';return}requestAnimationFrame(f)})();
 }
-/* ===== romantic music (WebAudio waltz) ===== */
+/* ===== soft music (WebAudio) ===== */
 let AC=null,musicOn=false,timer=null,step=0;
 const CH=[[261.6,329.6,392.0],[220.0,261.6,329.6],[174.6,220.0,261.6],[196.0,246.9,392.0]];
 const MEL=[659.3,587.3,523.3,587.3,659.3,783.9,659.3,523.3,440.0,523.3,587.3,523.3];
@@ -383,14 +372,14 @@ function startMusic(){if(!AC)AC=new (window.AudioContext||window.webkitAudioCont
  musicOn=true;ui();const bar=4.6;
  const tick=()=>{if(!musicOn)return;const t=AC.currentTime+.05;pad(CH[step%4],t,bar);
   pluck(MEL[step%12],t+1.2);if(step%2===1)pluck(MEL[(step+5)%12],t+2.8);step++;timer=setTimeout(tick,bar*1000)};
- tick();toast('🎵 tomar jonno romantic music…')}
+ tick();toast('🎵 music on')}
 function stopMusic(){musicOn=false;clearTimeout(timer);ui()}
 function ui(){document.getElementById('musicBtn').textContent=musicOn?'🎵 music: on':'🎵 music: off';
  const f=document.getElementById('musicFloat');f.textContent=musicOn?'⏸':'🎵';f.classList.toggle('playing',musicOn)}
 document.getElementById('musicBtn').onclick=()=>musicOn?stopMusic():startMusic();
 document.getElementById('musicFloat').onclick=()=>musicOn?stopMusic():startMusic();
 /* ===== typewriter ===== */
-const lines=['Amar naam Maruf…','Ami tomake bhalobashi, Ira.','Aj, kal, sarajibon. ❤'];
+const lines=['hey Ira…','ami tomake bhalobashi.','aj, kal, sarajibon. ❤'];
 let li=0,ci=0;const te=document.getElementById('typeLine');
 function type(){if(li>=lines.length){li=0;te.textContent='';setTimeout(type,1800);return}
  const L=lines[li];te.textContent=L.slice(0,++ci);
@@ -400,41 +389,41 @@ document.getElementById('openBtn').onclick=()=>{
  document.getElementById('welcome').classList.add('hide');
  document.getElementById('musicFloat').style.display='block';
  startMusic();burst(46);type();
- toast('Welcome, Ira ❤ aste aste scroll koro…');
+ toast('hey Ira ❤ aste aste scroll koro…');
  setTimeout(()=>document.getElementById('welcome').remove(),900)};
-/* ===== YES/NO proposal game ===== */
+/* ===== YES/NO game ===== */
 let dodges=0;const noBtn=document.getElementById('noBtn');
 const msg=document.getElementById('gameMsg'),zone=document.getElementById('noZone');
-const taunts=['Na na, hobe na! 😌','NO ta lojjay palalo 🙈','Arektu bhebe bolo 💭','NO doure palacche! 🏃‍♀️💨','Dhore felecho! Ebar YES bolo 💖'];
+const taunts=['na na, hobe na! 😌','NO ta paliye gelo 🙈','arektu bhebe bolo 💭','NO douracche! 🏃‍♀️💨','dhore felecho! ebar YES bolo 💖'];
 function moveNo(){const zr=zone.getBoundingClientRect();
  const mx=Math.max(0,zr.width-noBtn.offsetWidth-32);
  noBtn.style.position='absolute';noBtn.style.left=(16+Math.random()*mx)+'px';noBtn.style.top=(66+Math.random()*110)+'px';
  dodges++;['d1','d2','d3','d4'].forEach((d,i)=>document.getElementById(d).classList.toggle('on',dodges>i));
  msg.textContent=taunts[Math.min(dodges-1,4)];burst(6);
- if(dodges>=4){noBtn.textContent='Thik ache, YES 😂';noBtn.style.position='static';noBtn.onclick=showYes;
-  msg.textContent='Haha! Dhora pore gele! Ebar YES chap dao 💖'}}
+ if(dodges>=4){noBtn.textContent='thik ache, YES 😂';noBtn.style.position='static';noBtn.onclick=showYes;
+  msg.textContent='haha! dhora pore gele! ebar YES chap dao 💖'}}
 noBtn.addEventListener('mouseover',()=>{if(dodges<4)moveNo()});
 noBtn.addEventListener('click',()=>{if(dodges<4)moveNo()});
 noBtn.addEventListener('touchstart',e=>{if(dodges<4){e.preventDefault();moveNo()}},{passive:false});
 function showYes(){document.getElementById('yesSecret').style.display='block';
- msg.textContent='Sotti sobsomoy jite jay 💖';burst(60);fireworks();toast('YES! 💍❤🎉');
+ msg.textContent='sotti sobsomoy jite jay 💖';burst(60);fireworks();toast('YES! 💍❤🎉');
  document.getElementById('yesSecret').scrollIntoView({behavior:'smooth',block:'center'})}
 document.getElementById('yesBtn').onclick=showYes;
-/* ===== gates ===== */
+/* ===== surprises ===== */
 const order=['g1','g2','g3'];
 document.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>{
  const id=b.dataset.open,sec=document.getElementById(id+'-sec');
- sec.classList.add('open');b.textContent='✓ Khola hoyeche 💖';b.disabled=true;b.style.opacity='.65';burst(26);
+ sec.classList.add('open');b.textContent='✓ open hoyeche 💖';b.disabled=true;b.style.opacity='.65';burst(26);
  const i=order.indexOf(id);
  if(i+1<order.length){const n=document.getElementById(order[i+1]);n.classList.remove('locked');
-  const nb=n.querySelector('button');nb.disabled=false;nb.style.opacity='1';toast('Porer dorja khule geche! 🎁')}
- else toast('Sob dorja khola! Ebar asol prosno… 💍');
+  const nb=n.querySelector('button');nb.disabled=false;nb.style.opacity='1';toast('next ta open hoye geche! 🎁')}
+ else toast('sob open! ebar asol question… 💍');
  sec.scrollIntoView({behavior:'smooth',block:'center'})});
-/* ===== hug ===== */
+/* ===== bhalobasha button ===== */
 let hugs=0;document.getElementById('hugBtn').onclick=function(){hugs++;burst(34);fireworks();
- const m=['💖 Bhalobasha pouche geche! (1)','🌹 Golap o pathalam! (2)','🌙 Chand o sakkhi! (3)','∞ Oses bhalobasha mode on!'];
+ const m=['💖 bhalobasha pouche geche! (1)','🌹 golap o pathalam! (2)','🌙 chand o sakkhi! (3)','∞ oses bhalobasha mode on!'];
  document.getElementById('hugCount').textContent=m[Math.min(hugs-1,3)];
- this.textContent=hugs>3?'💖 Oses bhalobasha ∞':'💖 Abar pathao';toast('Maruf er pokkho theke oses bhalobasha ❤')};
+ this.textContent=hugs>3?'💖 oses bhalobasha ∞':'💖 abar pathao';toast('Maruf er pokkho theke oses bhalobasha ❤')};
 </script>
 </body>
 </html>
